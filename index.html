@@ -1,87 +1,129 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-    <title>My First Webpage(no)</title>
+    <title>Cats</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://web.dev/static/articles/building/an-adaptive-favicon/image/example-dark-theme-favico-6a6f6f67bc3e7.png">
 </head>
 <body>
-    <h1 align="center">Kabdulla Danial</h1>
-    <h2 align="center">IT-2408</h2>
+    <div class="grid-layout">
 
-    <table border="1" width="100%">
-        <tr>
-            <td width="20%" valign="top">
-                <h3>Menu</h3>
-                <ul>
-                    <li><a href="#1">About me</a></li>
-                    <li><a href="#2">Hobbies</a></li>
-                    <li><a href="#3">Websites</a></li>
-                    <li><a href="#4">Schedule</a></li>
-                    <li><a href="#5">Form</a></li>
-                </ul>
-            </td>
+        <header class="grid-header">
+            <img src="https://web.dev/static/articles/building/an-adaptive-favicon/image/example-dark-theme-favico-6a6f6f67bc3e7.png" alt="Logo">
+            <ul>
+                <li><a href="#cards">Cards</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </header>
 
-            <td width="80%" valign="top">
-                <h3 id="1">About me:</h3>
-                <p>I'm currently a student of Astana IT University. My major is Computer Science.&#128511;&#128511;&#128511;</p>
-                <hr />
-                <p id="2">List of my <strong>hobbies</strong>:</p>
-                <ol type="I">
-                    <li>Reading</li>
-                    <li>Calisthenics</li>
-                    <li>Listening music</li>
-                </ol>
+        <aside class="grid-sidebar">
+            <ul>
+                <li><a href="#cards">Cards</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </aside>
 
-                <p id="3">List of my favourite <strong>websites</strong>:</p>
-                <ul>
-                    <li><a href="https://youtube.com">Youtube</a></li>
-                    <li><a href="https://chatgpt.com">ChatGPT</a></li>
-                    <li><a href="https://monkeytype.com">monkeytype</a></li>
-                </ul>
-                <hr />
-                <img src=https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg alt="Cat" width="300" height="300" />
-                <br />
-                <button type="button">Click Me!</button>
-                <hr />
-                <table border="1" id="4">
-                    <tr>
-                        <th>Subject</th>
-                        <th>Day</th>
-                        <th>Time</th>
-                    </tr>
-                    <tr>
-                        <td>WEB 1</td>
-                        <td>Wednesday</td>
-                        <td>16:00 - 17:50</td>
-                    </tr>
-                    <tr>
-                        <td>WEB 1</td>
-                        <td>Monday</td>
-                        <td>13:00 - 13:50</td>
-                    </tr>
-                    <tr>
-                        <td>Analytic Geometry</td>
-                        <td>Tuesday</td>
-                        <td>16:00 - 16:50</td>
-                    </tr>
-                </table>
+        <main id="cards" class="grid-main">
 
-                <hr />
+            <section class="card-row">
+                <div class="card">
+                    <img src="https://framerusercontent.com/images/T8je8KOib5f8aE1iKk0icDxALU.jpeg?width=1000&height=1052" alt="Maine Coon">
+                    <h3><a href="https://en.wikipedia.org/wiki/Maine_Coon">Maine Coon</a></h3>
+                    <p>A large and friendly breed with a thick coat. They are calm and affectionate companions.</p>
+                    <button><a href="https://www.hillspet.com/cat-care/cat-breeds/maine-coon">Read more</a></button>
+                </div>
+                <div class="card">
+                    <img src="https://www.catster.com/wp-content/uploads/2023/11/Siamese-Cat_Andreas-LischkaPixabay.jpg" alt="Siamese">
+                    <h3><a href="https://en.wikipedia.org/wiki/Siamese_cat">Siamese</a></h3>
+                    <p>Graceful cats with blue eyes. Very sociable and love attention.</p>
+                    <button><a href="https://www.hillspet.com/cat-care/cat-breeds/siamese">Read more</a></button>
+                </div>
+                <div class="card">
+                    <img src="https://citizenshipper.com/_next/image?url=https%3A%2F%2Fdxy7kbcx3zqmq.cloudfront.net%2F1677936181683-24cf515b97ae.webp&w=750&q=75" alt="Bengal">
+                    <h3><a href="https://en.wikipedia.org/wiki/Bengal_cat">Bengal</a></h3>
+                    <p>Active cats with a leopard-like coat. Smart and playful.</p>
+                    <button><a href="https://www.hillspet.com/cat-care/cat-breeds/bengal">Read more</a></button>
+                </div>
+            </section>
 
-                <h3 id="5">Contact Form</h3>
-                <form>
-                    <label for="name">Name:</label><br />
-                    <input type="text" id="name" name="name"/><br /><br />
+            <section id="gallery" class="gallery">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg" alt="">
+                    <div class="caption">Cat 1</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg" alt="">
+                    <div class="caption">Cat 2</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg" alt="">
+                    <div class="caption">Cat 3</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg" alt="">
+                    <div class="caption">Cat 4</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg" alt="">
+                    <div class="caption">Cat 5</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg" alt="">
+                    <div class="caption">Cat 6</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg" alt="">
+                    <div class="caption">Cat 7</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg" alt="">
+                    <div class="caption">Cat 8</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg" alt="">
+                    <div class="caption">Cat 9</div>
+                </div>
+            </section>
 
-                    <label for="email">Email:</label><br />
-                    <input type="email" id="email" name="email"/><br /><br />
+        </main>
 
-                    <label for="color">Favorite Color:</label><br />
-                    <input type="color" id="color" name="color"/><br /><br />
+        <footer class="grid-footer">
+            <p>© 2025 Kabdulla Danial</p>
+        </footer>
 
-                    <input type="submit" value="Submit"/>
-                </form>
-            </td>
-        </tr>
-    </table>
+    </div>
+
+    <div id="portfolio" class="portfolio">
+        <div class="portfolio-header">
+            <div>My Portfolio</div>
+            <ul>
+                <li><a href="#cards">Cards</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </div>
+        <div class="portfolio-main">
+            <div class="project">
+                <h3>Github</h3>
+                <p>Github link</p>
+                <button>Open</button>
+            </div>
+            <div class="project">
+                <h3>LinkedIn</h3>
+                <p>LinkedIn link</p>
+                <button>Open</button>
+            </div>
+        </div>
+        <div class="portfolio-sidebar">
+            <h3>IT-2408</h3>
+            <p>Astana IT Student</p>
+        </div>
+        <div class="portfolio-footer">
+            <p>© 2025 Kabdulla Danial</p>
+        </div>
+    </div>
+
 </body>
 </html>
